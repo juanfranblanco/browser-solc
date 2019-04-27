@@ -41,6 +41,10 @@ function loadVersion(version, callback) {
     });
 }
 
+function getCurrentSolc() {
+	return solc(window.Module);
+}
+
 // Also loads global variables called "soljsonSources" and "soljsonReleases"
 function getVersions(callback) {
     var url = "https://ethereum.github.io/solc-bin/bin/list.js";
@@ -51,5 +55,6 @@ function getVersions(callback) {
 
 module.exports = {
   'getVersions': getVersions,
-  'loadVersion': loadVersion
+  'loadVersion': loadVersion,
+  'getCurrentSolc': getCurrentSolc
 };

@@ -55,6 +55,8 @@
       "build/",
       "soljson.js"
     ]
+  },
+  "dependencies": {
+    "solc": "^0.5.7"
   }
-
 }
